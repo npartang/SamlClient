@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntitiesDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="urn:oasis:names:tc:SAML:2.0:metadata http://docs.oasis-open.org/security/saml/v2.0/saml-schema-metadata-2.0.xsd">
+    <md:EntityDescriptor entityID="urn:dece:org:org:dece:7777">
+        <md:IDPSSODescriptor WantAuthnRequestsSigned="true" WantAssertionsSigned="true"
+            protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol"
+            validUntil="2018-12-31T10:56:40.000Z">
+            <md:KeyDescriptor use="signing">
+                <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <ds:X509Data>
+                        <ds:X509Certificate>MIICzzCCAjgCAicHMA0GCSqGSIb3DQEBBQUAMGoxCzAJBgNVBAYTAlVTMREwDwYD
+VQQIEwhWaXJnaW5pYTERMA8GA1UEBxMIU3RlcmxpbmcxEDAOBgNVBAoTB05ldXN0
+YXIxCzAJBgNVBAsTAlFBMRYwFAYDVQQDEw1uZXVzdGFyLnFhLmNhMB4XDTEyMDQx
+NjE2NDQwNFoXDTE1MDExMTE2NDQwNFowcTELMAkGA1UEBhMCVVMxCzAJBgNVBAgT
+AlZBMREwDwYDVQQHEwhTdGVybGluZzEQMA4GA1UEChMHTmV1c3RhcjELMAkGA1UE
+CxMCUUExIzAhBgNVBAMTGnVybjpkZWNlOm9yZzpvcmc6ZGVjZTo3Nzc3MIIBIjAN
+BgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz17YtaJugCJAhGls6pPq5NGob9t8
+zlK8kSvoY/noZOrCWprsMwyq1XhDGj1eZf5j54VUjX6ZBC4HfUuPGLfG+VNEiJz4
+VudmPogJ1j3suZYVFsYUQU24MevsNLs13VGOtyLCn6LDcLl9fRTCQPejXQS1Q6IR
+mxaPb5xCimyH6lQkmwYVO+aG40Q1v19zGo4OhsVBY8KYiQZ6fj0Sl5DS20uZrHzX
+PNsNpftmUw6MNWPoF99f9KN+8AFH/0rub+3EfbfZHNPzAHn3dp9PfX6hVOOC6Zad
+QP8tlMkU2lRVzmzEGwYwbLt1CzrOgR/lCOUiLh2tQU8z5u9mTkNZ0Z/WNwIDAQAB
+MA0GCSqGSIb3DQEBBQUAA4GBACwnxbnFDz7tvn8j34GqbKMMwWwWoEUa2nEq7rH7
+MwpktYl1D6mZHD9j/q8/IqchN2D0nCL/xi54AGNHB4RsxzU1Nf7M5TZxWYqiGYdM
+ld/5bgf0hqUNyEfaAjmF/0SV8P0HIsd0y8JD/QAAxN1u+eX5J1Rg/JX9ODb6zAh3
+XXds</ds:X509Certificate>
+                    </ds:X509Data>
+                </ds:KeyInfo>
+            </md:KeyDescriptor>
+            <md:Organization>
+                <md:OrganizationName xmlns:xml="http://www.w3.org/XML/1998/namespace"
+                    xml:lang="en-us">Coordinator</md:OrganizationName>
+                <md:OrganizationDisplayName xmlns:xml="http://www.w3.org/XML/1998/namespace"
+                    xml:lang="en-us"/>
+                <md:OrganizationURL xmlns:xml="http://www.w3.org/XML/1998/namespace"
+                    xml:lang="en-us"/>
+            </md:Organization>
+            <md:ContactPerson contactType="technical">
+                <md:Company>Coordinator</md:Company>
+                <md:GivenName>Narayan</md:GivenName>
+                <md:SurName>Partangel</md:SurName>
+                <md:EmailAddress>npartangel@gmail.com</md:EmailAddress>
+                <md:TelephoneNumber>+1.7038670602</md:TelephoneNumber>
+            </md:ContactPerson>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                Location="https://qa.p.uvvu.com:7001/rest/1/06/logoutservice/"/>
+            <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                Location="https://qa.p.uvvu.com:7001/rest/1/06/logoutservice/"/>
+            <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                Location="https://qa.s.uvvu.com:7001/security/federation/saml/loginservice/login"/>
+            <md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                Location="https://qa.s.uvvu.com:7001/security/federation/saml/loginservice/login"/>
+        </md:IDPSSODescriptor>
+    </md:EntityDescriptor>
+</md:EntitiesDescriptor>
